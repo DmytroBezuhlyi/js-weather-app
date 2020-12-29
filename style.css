@@ -1,0 +1,69 @@
+body {
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+}
+h2 {
+    font-weight: 400;
+    font-size: 36px;
+}
+input {
+    background-color: #009999;
+}
+button {
+    cursor: pointer;
+    padding: 5px 15px;
+}
+input, button {
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+}
+::placeholder {
+    font-family: 'Merriweather', sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+}
+input[type="text"] {
+    color: white;
+    padding: 5px 15px;
+}
+button:focus {
+    background-color: #009999;
+    color: white;
+    font-weight: 600;
+}
+button:focus,
+input:focus {
+    outline: none;
+}
+.container {
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+}
+.menu .header,
+.menu .city-input {
+    text-align: center;
+}
+section.data {
+    margin: 40px 10px;
+}
+section.data .header {
+    text-align: center;
+}
+.table-content {
+    display: flex;
+}
+#city-btn {
+    display: none;
+}
+.day {
+    border-radius:4px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    text-align:center;
+    padding:20px;
+    width:20%;
+    margin: 0 10px;
+}

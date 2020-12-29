@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DoC Weather JS</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet"></head>
+<body>
+
+<section class="menu">
+    <div class="container">
+        <div class="header">
+            <h2>Введите название города</h2>
+        </div>
+        <div class="city-input">
+            <input type="text" id="city" placeholder="Харьков" onfocus="this.placeholder = ''" onkeypress="showOkButton()"/>
+            <button id="city-btn" onclick="showDateTime();">Ok</button>
+        </div>
+        <div class="city-select">
+
+        </div>
+    </div>
+</section>
+
+<section class="data">
+    <div class="container">
+        <div class="header">
+            <h3>Прогноз на 5 дней <br><span id="cityName"></span></h3>
+        </div>
+        <div class="table-content">
+            <div class="day">
+                <img id="tmp3"/><br>
+                <p id="day0">Сейчас</p>
+                <div id="demo3"></div>
+                <div id="demo1"></div>
+                <div id="demo2-1"></div>
+                <div id="demo2-2"></div>
+                <div id="demo0"></div>
+            </div>
+
+            <div class="day">
+                <img id="tmp4"/><br>
+                <p id="day1"></p>
+                <div id="demo7"></div>
+                <div id="demo5"></div>
+                <div id="demo6"></div>
+                <div id="demo4"></div>
+            </div>
+
+            <div class="day">
+                <img id="tmp5"/><br>
+                <p id="day2"></p>
+                <div id="demo10"></div>
+                <div id="demo11"></div>
+                <div id="demo8"></div>
+                <div id="demo9"></div>
+            </div>
+
+            <div class="day">
+                <img id="tmp6"/><br>
+                <p id="day3"></p>
+                <div id="demo14"></div>
+                <div id="demo15"></div>
+                <div id="demo12"></div>
+                <div id="demo13"></div>
+            </div>
+
+            <div class="day">
+                <img id="tmp7"/><br>
+                <p id="day4"></p>
+                <div id="demo18"></div>
+                <div id="demo19"></div>
+                <div id="demo16"></div>
+                <div id="demo17"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
